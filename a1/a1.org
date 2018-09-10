@@ -1,0 +1,17 @@
+#+STARTUP: noindent showall
+#+OPTIONS: toc:nil
+#+LaTeX_HEADER: \usepackage[margin=1.0in]{geometry}
+#+TITLE: CS581 Assignment One
+#+SUBTITLE: *My Use of Online Social Networks*
+#+AUTHOR: Khayyam Saleem
+#+DATE: September 9, 2018
+
+Social media has been a part of my life and online presence for almost as long as I can remember. My first interactions on social media were over /MSN Messenger/ when I was in first or second grade, with family overseas to keep in touch. Since all of the interactions were person-to-person, with people I could trust, it was a safe first foray into social media, and got me to exercise my typing muscles at an early age.
+When I was in the third grade, around seven years old, my father got me to create an online blog to sharpen my writing skills. I would write on this blog, hosted through /blogspot.com/ regularly, and some of my first online interactions with people were replying to the mostly friendly comments on my blog. This became my second experience with a novel form of social media, as I could now share my thoughts with a broader audience and start interacting with people that I did not know beforehand.
+
+Closer towards the end of middle school is when I really started using social media on a near-daily basis. I had made a /Facebook/ account so that I could keep in contact with friends after we parted ways for high school, and started posting photos online for the first time. Then in high school came /Instagram/, a more dedicated platform for sharing photos alone. Then came /Reddit/, for the best aggregated content I had seen until then. Then came /Snapchat/, a revolutionary platform at the time. This was my first time using ephemeral content, and the allure of any photo, embarassing or otherwise, disappearing in 24 hours helped me build the confidence to post more photos on social media overall. In college, I abandoned /Facebook/ for the most part and used /Reddit/ as my primary content aggregator and /GroupMe/ as my primary messenger, as I had developed strong friend groups and could no longer afford the consistent distractions offered by /Facebook's/ news feed.
+
+Since /Facebook/ implemented a marketplace and "Free and For Sale" groups, I found myself using it a bit more again, as it allowed me to get discount goods around my area with ease. I've been using adblockers on social media consistently since they started getting in the way of the content that I was interested in, so the marketplace was the only avenue to purchase goods offered to me by social media.
+The only platform over which I maintain more than one account on is /Instagram/, where I maintain one account for my regular use (photos of myself, friends, outdoor adventures, etc.), and another account for documenting my fitness and personal health journey (photos of food, updates to my weight, progress photos, etc.). The second account has no "followers," and is used purely for myself so I can quickly assess my growth and how I've changed since I started paying more attention to my health. 
+
+Social media has become a very important tool for me, and an integral part of my lifestyle. The diversity of platforms that I've familiarized myself with has given me the opportunity to meet new friends, maintain connections with old ones, document my life and lifestyle changes, and keep up-to-date with the news that I am interested in. Since it dominates such a large part of my online presence, I am excited to explore and exploit the technical side of it all throughout this semester. 
