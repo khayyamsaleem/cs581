@@ -1,8 +1,8 @@
 #+STARTUP: noindent showall
 #+OPTIONS: toc:nil
 #+LaTeX_HEADER: \usepackage[margin=1.0in]{geometry}
-#+TITLE: CS581 Assignment One
-#+SUBTITLE: *My Use of Online Social Networks*
+#+TITLE: My Use of Online Social Networks
+#+SUBTITLE: CS581 Assignment #1
 #+AUTHOR: Khayyam Saleem
 #+DATE: September 9, 2018
 
