@@ -1,0 +1,73 @@
+#+STARTUP: noindent showall
+#+OPTIONS: toc:nil num:nil
+#+TITLE: Graphs
+#+SUBTITLE: CS581 Assignment 2
+#+LaTeX_HEADER: \usepackage[margin=1.0in]{geometry}
+#+AUTHOR: Khayyam Saleem
+
+* Chapter 2 Exercises
+*** /(1 a)/ Give an example of a graph in which /every/ node is pivotal for at least one pair of nodes. Explain your answer.
+    
+   #+BEGIN_SRC dot :cmd neato :file 1ab.png :exports both
+    graph g {
+        a -- b
+        b -- c
+        c -- d
+        d -- e
+        e -- f
+        f -- g
+        g -- a
+    }
+   #+END_SRC
+
+   #+ATTR_LATEX: :width 75
+   #+RESULTS:
+   [[file:1ab.png]]
+
+   In this graph, every node is pivotal for the two nodes adjacent to it. Any graph that is a /cycle/ of at least 4 nodes has this property, as the only way to create a /path/ from any two non-adjacent nodes is by traversing the ones in-between. The definition of /cycle/ is invalid for graphs of node cardinality 1 or 2, and a /3-cycle/ would not suffice.
+   
+*** /(1 b)/ Give an example of a graph having at least four nodes in which there is a single node /X/ that is pivotal for /every/ pair of nodes (not counting pairs that include /X/). Explain your answer.
+    
+    The graph presented in /(1 a)/ also has this property. Any node can be chosen as /X/. /X/ is then pivotal for its right and left neighbors (1), and also pivotal for its right neighbor and the left neighbor of its left neighbor (2).
+
+*** /(1 c)/ Give an example of a graph having at least 4 nodes in which there is a single node /X/ that is pivotal for /every/ pair of nodes (not counting pairs that include /X/. Explain your answer.
+
+   #+BEGIN_SRC dot :cmd neato :file 1c.png :exports both
+    graph g {
+        a -- b
+        a -- c
+        a -- d
+        a -- f
+        a -- g
+        a -- h
+    }
+   #+END_SRC
+
+   #+ATTR_LATEX: :width 75
+   #+RESULTS:
+   [[file:1c.png]]
+
+   Node /a/ is /X/. Any /star/-like graph with node cardinality than or equal to 4 will have a /center node/ with this property, as there are NO paths between any two nodes that do not go through the center.
+
+*** /(2 a)/ Give an example (together with an explanation) of a graph in which more than half of all nodes are gatekeepers.
+
+    
+   #+BEGIN_SRC dot :cmd dot :file 2a.png :exports both
+   graph g { rankdir=LR;
+       a -- b
+       b -- c
+       c -- d
+       d -- e
+   }
+   #+END_SRC
+
+   #+ATTR_LATEX: :width 150
+   #+RESULTS:
+   [[file:2a.png]]
+
+   Any graph that is a single /path/ with node cardinality greater than or equal to 5 will have this property, as each of the /non-terminal/ nodes will serve as gatekeepers for the rest.
+
+
+*** /(2 b)/ Give an example (together with an explanation) of a graph in which there are no gatekeepers, but in which every node is a local gatekeeper.
+
+    /(1 a)/ meets this condition, as would any /cycle/ with node cardinality greater than 3. Every node is a gatekeeper for its immediate neighbors, but any non-adjacent pairs of nodes /Y/ and /Z/ could be connected by traversing "the other" path around the graph.
