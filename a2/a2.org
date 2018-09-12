@@ -8,7 +8,7 @@
 * Chapter 2 Exercises
 ** /(1 a)/ Give an example of a graph in which /every/ node is pivotal for at least one pair of nodes. Explain your answer.
     
-   #+BEGIN_SRC dot :cmd neato :file 1ab.png :exports both
+   #+BEGIN_SRC dot :cmd neato :file figs/1ab.png :exports both
     graph g {
         a -- b
         b -- c
@@ -22,7 +22,7 @@
 
    #+ATTR_LATEX: :width 75
    #+RESULTS:
-   [[file:1ab.png]]
+   [[file:figs/1ab.png]]
 
    In this graph, every node is pivotal for the two nodes adjacent to it. Any graph that is a /cycle/ of at least 4 nodes has this property, as the only way to create a /path/ from any two non-adjacent nodes is by traversing the ones in-between. The definition of /cycle/ is invalid for graphs of node cardinality 1 or 2, and a /3-cycle/ would not suffice.
    
@@ -32,7 +32,7 @@
 
 ** /(1 c)/ Give an example of a graph having at least 4 nodes in which there is a single node /X/ that is pivotal for /every/ pair of nodes (not counting pairs that include /X/. Explain your answer.
 
-   #+BEGIN_SRC dot :cmd neato :file 1c.png :exports both
+   #+BEGIN_SRC dot :cmd neato :file figs/1c.png :exports both
     graph g {
         a -- b
         a -- c
@@ -45,14 +45,14 @@
 
    #+ATTR_LATEX: :width 75
    #+RESULTS:
-   [[file:1c.png]]
+   [[file:figs/1c.png]]
 
    Node /a/ is /X/. Any /star/-like graph with node cardinality than or equal to 4 will have a /center node/ with this property, as there are NO paths between any two nodes that do not go through the center.
 
 ** /(2 a)/ Give an example (together with an explanation) of a graph in which more than half of all nodes are gatekeepers.
 
     
-   #+BEGIN_SRC dot :cmd dot :file 2a.png :exports both
+   #+BEGIN_SRC dot :cmd dot :file figs/2a.png :exports both
    graph g { rankdir=LR;
        a -- b
        b -- c
@@ -63,7 +63,7 @@
 
    #+ATTR_LATEX: :width 150
    #+RESULTS:
-   [[file:2a.png]]
+   [[file:figs/2a.png]]
 
    Any graph that is a single /path/ with node cardinality greater than or equal to 5 will have this property, as each of the /non-terminal/ nodes will serve as gatekeepers for the rest.
 
@@ -75,7 +75,7 @@
 * Chapter 3 Exercises
 ** /(1)/ In 2-3 sentences, explain what triadic closure is, and how it plays a role in the formation of social networks. You can draw a schematic picture in case this is useful.
 
-   #+BEGIN_SRC dot :cmd dot :file 3_1.png :exports both
+   #+BEGIN_SRC dot :cmd dot :file figs/3_1.png :exports both
    graph g {
        b -- a
        b -- c
@@ -84,27 +84,27 @@
 
    #+ATTR_LATEX: :width 75
    #+RESULTS:
-   [[file:3_1.png]]
+   [[file:figs/3_1.png]]
 
    From the text, we can define /triadic closure/ as the property that a cycle of node cardinality 3 can form in a graph of node cardinality greater than or equal to 3. We can say that in the graph above, an edge inserted between nodes /a/ and /c/ would form the triadic closure of /a/, /b/, and /c/. The triadic closure plays a role in the formation of social networks in that for nodes /a/ and /c/, if node /b/ were to manufacture the connection between nodes /a/ and /c/, the social network would strengthen, as now /a/ and /c/ would be able to introduce their respective neighborhoods to each other.
 
 ** /(2)/ Consider the graph in Figure 3.21, in which each edge -- except the edge connecting /b/ and /c/ is labeled as a strong tie (S) or a weak tie (W). According to the theory of strong and weak ties, with the strong triadic closure assumption, how would you expect the edge connecting /b/ and /c/ to be labeled? Give a brief (1-3 sentence) explanation for your answer.
    
    #+ATTR_LATEX: :width 120
-   [[./Fig3.21.png]]
+   [[./figs/Fig3.21.png]]
 
    I would expect the edge connecting /b/ and /c/ to be labeled with W. This is because making this edge a strong tie would violate the strong triadic closure property for nodes /b/ and /c/. For example, for node /c/, /b/ and /f/ would not be connected by an edge but the /(b, c)/ and /(c, f)/ edges are both strong, violating the property by definition.
 
 ** /(3)/ In the social network depicted in Figure 3.22, with each edge labeled as either a strong or weak tie, which two nodes violate the Strong Triadic Closure Property? Provide an explanation for your answer.
    
    #+ATTR_LATEX: :width 120
-   [[./Fig3.22.png]]
+   [[./figs/Fig3.22.png]]
 
    Node /c/ violates the property because it /(c, e)/ and /(c, b)/ are strong ties, but /(b, e)/ does not exist. Node /e/ violates the property because /(e, c)/ and /(e, d)/ are strong ties, but /(d, c)/ does not exist.
 
 ** /(5)/ In the social network depicted in Figure 3.24, with each edge labeled as either a strong or weak tie, which nodes satisfy the Strong Triadic Closure Property from Chapter 3, and which do not? Provide an explanation for your answer.
 
    #+ATTR_LATEX: :width 120
-   [[./Fig3.24.png]]
+   [[./figs/Fig3.24.png]]
    
    Node /c/ violates the property because /(c, a)/ and /(c, e)/ are strong ties but /(a, e)/ does not exist. The rest of the nodes satisfy the property, as they do not violate the property.
