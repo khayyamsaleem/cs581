@@ -5,7 +5,9 @@
 #+LaTeX_HEADER: \usepackage[margin=1.0in]{geometry}
 #+AUTHOR: Khayyam Saleem
 
+---------
 * Chapter 2 Exercises
+---------
 ** /(1 a)/ Give an example of a graph in which /every/ node is pivotal for at least one pair of nodes. Explain your answer.
     
    #+BEGIN_SRC dot :cmd neato :file figs/1ab.png :exports both
@@ -26,10 +28,12 @@
 
    In this graph, every node is pivotal for the two nodes adjacent to it. Any graph that is a /cycle/ of at least 4 nodes has this property, as the only way to create a /path/ from any two non-adjacent nodes is by traversing the ones in-between. The definition of /cycle/ is invalid for graphs of node cardinality 1 or 2, and a /3-cycle/ would not suffice.
    
+---------
 ** /(1 b)/ Give an example of a graph having at least four nodes in which there is a single node /X/ that is pivotal for /every/ pair of nodes (not counting pairs that include /X/). Explain your answer.
     
     The graph presented in /(1 a)/ also has this property. Any node can be chosen as /X/. /X/ is then pivotal for its right and left neighbors (1), and also pivotal for its right neighbor and the left neighbor of its left neighbor (2).
 
+---------
 ** /(1 c)/ Give an example of a graph having at least 4 nodes in which there is a single node /X/ that is pivotal for /every/ pair of nodes (not counting pairs that include /X/. Explain your answer.
 
    #+BEGIN_SRC dot :cmd neato :file figs/1c.png :exports both
@@ -49,6 +53,7 @@
 
    Node /a/ is /X/. Any /star/-like graph with node cardinality than or equal to 4 will have a /center node/ with this property, as there are NO paths between any two nodes that do not go through the center.
 
+---------
 ** /(2 a)/ Give an example (together with an explanation) of a graph in which more than half of all nodes are gatekeepers.
 
     
@@ -68,11 +73,14 @@
    Any graph that is a single /path/ with node cardinality greater than or equal to 5 will have this property, as each of the /non-terminal/ nodes will serve as gatekeepers for the rest.
 
 
+---------
 ** /(2 b)/ Give an example (together with an explanation) of a graph in which there are no gatekeepers, but in which every node is a local gatekeeper.
 
     /(1 a)/ meets this condition, as would any /cycle/ with node cardinality greater than 3. Every node is a gatekeeper for its immediate neighbors, but any non-adjacent pairs of nodes /Y/ and /Z/ could be connected by traversing "the other" path around the graph.
 
+---------
 * Chapter 3 Exercises
+---------
 ** /(1)/ In 2-3 sentences, explain what triadic closure is, and how it plays a role in the formation of social networks. You can draw a schematic picture in case this is useful.
 
    #+BEGIN_SRC dot :cmd dot :file figs/3_1.png :exports both
@@ -88,6 +96,7 @@
 
    From the text, we can define /triadic closure/ as the property that a cycle of node cardinality 3 can form in a graph of node cardinality greater than or equal to 3. We can say that in the graph above, an edge inserted between nodes /a/ and /c/ would form the triadic closure of /a/, /b/, and /c/. The triadic closure plays a role in the formation of social networks in that for nodes /a/ and /c/, if node /b/ were to manufacture the connection between nodes /a/ and /c/, the social network would strengthen, as now /a/ and /c/ would be able to introduce their respective neighborhoods to each other.
 
+---------
 ** /(2)/ Consider the graph in Figure 3.21, in which each edge -- except the edge connecting /b/ and /c/ is labeled as a strong tie (S) or a weak tie (W). According to the theory of strong and weak ties, with the strong triadic closure assumption, how would you expect the edge connecting /b/ and /c/ to be labeled? Give a brief (1-3 sentence) explanation for your answer.
    
    #+ATTR_LATEX: :width 120
@@ -95,6 +104,7 @@
 
    I would expect the edge connecting /b/ and /c/ to be labeled with W. This is because making this edge a strong tie would violate the strong triadic closure property for nodes /b/ and /c/. For example, for node /c/, /b/ and /f/ would not be connected by an edge but the /(b, c)/ and /(c, f)/ edges are both strong, violating the property by definition.
 
+---------
 ** /(3)/ In the social network depicted in Figure 3.22, with each edge labeled as either a strong or weak tie, which two nodes violate the Strong Triadic Closure Property? Provide an explanation for your answer.
    
    #+ATTR_LATEX: :width 120
@@ -102,9 +112,102 @@
 
    Node /c/ violates the property because it /(c, e)/ and /(c, b)/ are strong ties, but /(b, e)/ does not exist. Node /e/ violates the property because /(e, c)/ and /(e, d)/ are strong ties, but /(d, c)/ does not exist.
 
+---------
 ** /(5)/ In the social network depicted in Figure 3.24, with each edge labeled as either a strong or weak tie, which nodes satisfy the Strong Triadic Closure Property from Chapter 3, and which do not? Provide an explanation for your answer.
 
    #+ATTR_LATEX: :width 120
    [[./figs/Fig3.24.png]]
    
    Node /c/ violates the property because /(c, a)/ and /(c, e)/ are strong ties but /(a, e)/ does not exist. The rest of the nodes satisfy the property, as they do not violate the property.
+
+---------
+* Chapter 4 Exercises
+---------
+** /(1)/ Consider the social network represented in Figure 4.20. Suppose that this social network was obtained by observing a group of people at a particular point in time and recording all their friendship relations. Now suppose that we come back at some point in the future and observe it again. According to the theories based on empirical studies of triadic closure in networks, which new edge is most likely to be present? (i.e. which pair of nodes, who do not currently have an edge connecting them, are most likely to be linked by an edge when we return to take the second observation?) Also, give a brief explanation for your answer.
+   
+   #+ATTR_LATEX: :width 200
+   [[./figs/Fig4.20.png]]
+
+   Edge /(b, d)/ is the most likely to be present after the second observation, because these nodes each have three mutual neighbors, whereas each other node pair has fewer.
+
+
+---------
+
+#+ATTR_LATEX: :width 200
+[[./figs/Fig4.21.png]]
+
+** /(3 a)/ Consider the affiliation network in Figure 4.21, with six people labeled /A-5/, and three foci labeled /X/, /Y/, and /Z/. Draw the derived network on just the six people as in Exercise 2, joining two people when they share a focus.
+
+    #+BEGIN_SRC dot :cmd dot :file figs/5_3a.png :exports both
+    graph g { rankdir=LR;
+	A -- B
+	A -- C
+	A -- E
+	B -- C
+	C -- E
+	C -- F
+	D -- E
+	E -- F
+	A -- D
+    }
+    #+END_SRC
+
+   #+ATTR_LATEX: :width 150
+   #+RESULTS:
+   [[file:figs/5_3a.png]]
+
+---------
+** /(3 b)/ In the resulting network on people, can you identify a sense in which the triangle on the nodes /A/, /C/, and /E/ has a qualitatively different meaning than the other triangles that appear in the network? Explain.
+
+   Each edge in the triangle between /A/, /C/, and /E/ is additionally supported by another neighbor, and is part of another triadic closure. These edges could have possibly arisen from a "mutual friend" relationship between their supporting neighbors.
+
+---------
+
+#+ATTR_LATEX: :width 250
+[[./figs/Fig4.22.png]]
+
+** /(4 a)/ Given a network showing pairs of people who share activities, we can try to reconstruct an affiliation network consistent with this data. For example, suppose that you are trying to infer the structure of a bipartite affiliation network, and by indirect observation you've obtained the projected network on just the set of people, constructed as in Exercise 2: there is an edge joining each pair of people who share a focus. This projected network is shown in Figure 4.22. Draw an affiliation network involving these six people, together with four foci that you should define, whose projected network is the graph shown in Figure 4.22.
+
+
+    #+BEGIN_SRC dot :cmd dot :file figs/5_4a.png :exports both
+    graph g {
+	A -- 1
+	C -- 1
+        E -- 1
+        A -- 2
+        B -- 2
+        E -- 2
+        C -- 3
+        D -- 3
+        F -- 3
+        B -- 4
+        D -- 4
+        F -- 4
+    }
+    #+END_SRC
+
+   #+ATTR_LATEX: :width 300
+   #+RESULTS:
+   [[file:figs/5_4a.png]]
+
+---------
+** /(4 b)/ Explain why any affiliation network capable of producing the projected network in Figure 4.22 must have at least four foci.
+   
+   Each triadic closure necessitates a new focus. Any absence of an edge indicates that these two entities cannot share a focus.
+
+
+---------
+* Chapter 5 Exercises
+---------
+** /(1)/ Suppose that a team of anthropologists is studying a set of three small villages that neighbor one another. Each village has 30 people, consisting of 2-3 extended families. Everyone in each village knows all the people in their own village, as well as the people in the other villages. When the anthropologists build the social network on the people in all three villages taken together, they find that each person is friends with all the other people in their own village, and enemies with everyone in the two other villages. This gives them a network on 90 people (i.e., 30 in each village), with positive and negative signs on its edges. According to the definitions in this chapter, is this network on 90 people balanced? Give a brief explanation for your answer.
+   
+   This network on 90 people is NOT balanced. However, it is weakly balanced. By the notion of structural balance, there should exist a positive sign on each edge, but in the example provided, each edge is signed negative. We can model each village as a node, so even though villages /X/, /Y/, and /Z/ have positive edges inside, the triangle that joins all of them together is marked by negative edges.
+
+---------
+
+#+ATTR_LATEX: :width 250
+[[./figs/Fig5.18.png]]
+
+** /(2)/ For each edge, how many of the triangles it participates in are balanced, and how many are unbalanced?
+   
+   From the text, "A signed graph is balanced if and only if it contains no cycle with an odd number of negative edges." Take /(A, B)/. This edge completes three triangles: /(A, B, C)/, /(A, B, D)/, and /(A, B, E)/. /(A, B, D)/ is balanced, and the other two are not. Take /(A, C)/. This edge completes three triangles: /(A, C, D)/, /(A, B, C)/, and /(A, C, E)/. /(A, C, D)/ and /(A, C, E)/ are balanced. Due to the symmetric nature of the graph, these properties are maintained, per parity, for each edge in the graph. 
