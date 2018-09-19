@@ -119,6 +119,7 @@ async function search(auth) {
                 else
                     topic_freqs[o] = 1
             }
+            console.log("-------------\nTOPIC FREQUENCIES\n-------------")
             console.log(topic_freqs)
         });
     })
