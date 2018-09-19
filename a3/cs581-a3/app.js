@@ -111,11 +111,15 @@ async function search(auth) {
                 "topicCategories": statObj.data.items[0].topicDetails.topicCategories.map(link => link.slice(30))
             }))
             console.log(out)
-            console.log(
-                new Set(
-                    out.map(o => o.topicCategories).reduce((acc, val) => acc.concat(val), [])
-                )
-            )
+            let topic_freqs = {}
+            let flat_topics = out.map(o => o.topicCategories).reduce((acc, val) => acc.concat(val), [])
+            for(let o of flat_topics){
+                if (topic_freqs[o])
+                    topic_freqs[o] += 1
+                else
+                    topic_freqs[o] = 1
+            }
+            console.log(topic_freqs)
         });
     })
 }
