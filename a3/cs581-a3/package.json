@@ -1,0 +1,16 @@
+{
+  "name": "cs581-a3",
+  "version": "1.0.0",
+  "description": "uses the youtube api",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Khayyam Saleem",
+  "license": "ISC",
+  "dependencies": {
+    "google-auth-library": "^2.0.0",
+    "googleapis": "^33.0.0",
+    "prompt": "^1.0.0"
+  }
+}
