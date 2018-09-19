@@ -1,0 +1,7 @@
+* Instructions
+- ~npm install~
+- ~node app.js~
+- follow link to generate key
+- enter search string when prompted
+- enter max results to yield (0 - 50)
+- look at list of topics yielded to assess "topic strengths" associated with word.
