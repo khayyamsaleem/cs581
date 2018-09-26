@@ -1,0 +1,29 @@
+#+TITLE: Privacy and Ethics in Online Social Networks
+#+SUBTITLE: CS581 Assignment #4
+#+AUTHOR: Khayyam Saleem
+#+OPTIONS: toc:nil
+#+LaTeX_HEADER: \usepackage[1.0in]{geometry}
+
+
+* [[https://www.theatlantic.com/technology/archive/2014/06/everything-we-know-about-facebooks-secret-mood-manipulation-experiment/373648/][Everything We Know About Facebook's Secret Mood Manipulation Experiment]]
+Facebook has a lot of pull in the world of social media and communication, but it has been known in recent years to exploit this power for questionable gain. This article highlights one such instance, in which Facebook presented content through their news feed in an attempt to manipulate and quantify the emotional state of their users. Though their experiment was legally sound, it raises important ethical questions. They were able to verify that their experiment was successful by detecting a higher number of words with a negative connotation in users that were presented with more negative content in their news feed. A similar parallel was identified for positive content.
+
+The true gain for the company was in realizing that without any polarizing content at all, users showed less engagement on the platform. It was in their best interest to present emotional content that would incite their users to engage more with the platform. The linked article also mentions that the experiment was poorly controlled, in that the algorithms for assessing sentiment in a post were not developed for use on short blurbs like Facebook posts. Regardless, this experiment transgresses the usual purposes for data collection (observation) and moves into relatively uncharted territory (manipulation). 
+
+* Ethics in Online Social Networks
+From [[https://www.statista.com/statistics/278414/number-of-worldwide-social-network-users/][this article on Statista]], the number of social media users worldwide is at 2.62 billion, and projected to exceed 3 billion by 2021. Facebook holds an enormous share of these users, at 2.2 billion registered users as of July 2018. For them to have conducted the mood experiment, even on a small scale, is a huge ethical transgression; sheerly because of the size of their user-base. For them to have so much influence in the world, and to wield that influence without paying careful attention to the ethical consequences of their technology and data, is a major problem.
+
+Experiments that are conducted without the explicit and knowing consent of the participants, especially those that can affect the participants' well-being, are _NOT_ ethical. Though the experiment detailed in the article did yield useful insight for the company's growth and pursuit of its agenda, manipulating the emotional state of their users through emotionally polarized content could not possibly result in any positive implications for the users. It was exploitative and unethical on the part of the company, regardless of the severity of consequence. Although language in the terms of service indicates that the user relinquishes their right to be exempt from such experiments by using the platform, it is unethical to lay a few valuable lines amongst 9000 words of techological legalese and argue that they've exempted themselves from any blame or consequence.
+
+Though this experiment went by without getting too much media attention in 2012, it would be nothing short of headline news today. Since the hot water Facebook was put in after the Cambridge Analytica scandal, the evidence of propaganda distribution on the platform throughout the 2016 election campaigns, and countless privacy concerns cropping up across ALL social media platforms, users are becoming a lot more mindful of their online presence. If such an experiment was pulled today, Facebook would definitely not be able to get away with it due to heavy media scrutiny and growing public distrust in the company's business practices and use of data. 
+
+* [[https://www.wired.com/story/security-risks-of-logging-in-with-facebook/][The Security Risks of Logging In with Facebook]]
+The key issues raised in this article are namely:
+- the presence of third-party trackers and how they are able to capture data from a Facebook profile without your explicit consent.
+- the possibility of forwarding information from the Facebook Login API to use to scrape more data off the platform.
+- the convenience of the feature partially blinding a user to the potential security risks associated with it.
+The presence of third-party trackers on websites is a major cause for concern. For example, people have started to link payments with their social identities with platforms like Venmo. With access to payment data, third-party trackers could learn about your spending habits and sell that data to other marketing companies without your consent. Having all your content tailored to one's social media presence can force a closed "bubble" of consumption and prevent growth and diversification of interests.
+
+The ability of scripts to scrape data off of your social media profile and compromise your identity has major negative implications for privacy. One can no longer simply trust when a platform requests just a small subset of their profile, as other malicious scripts can take advantage of that data to conduct further exploration and yield more data that consent was not provided for.
+
+It is impossible to argue that having this feature available is not convenient, what with having a unified password and authentication mechanism and profile across all platforms. However, my best advice is to continue to make new accounts per platform, so that you can have greater security in what information you provide to what platforms and keep your data safe. To circumvent the problem of not having a unified password and authentication mechanism, simply use a password manager. In this day and age, one's identity and security is all too valuable to be taken lightly.
