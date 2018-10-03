@@ -1,0 +1,56 @@
+#+STARTUP: noindent showall
+#+TITLE: Game Theory and Social Networks
+#+SUBTITLE: CS581 Assignment #5
+#+AUTHOR: Khayyam Saleem
+#+OPTIONS: toc:nil num:nil
+#+DATE: October 2, 2018
+#+LaTeX_HEADER: \usepackage[1.0in]{geometry}
+
+* Chapter 6 Exercises
+1) _Claim_: If player /A/ in a two-person game has a dominant strategy s_A, then there is a pure strategy Nash equilibrium in which player /A/ plays s_A and player /B/ plays a best response to s_A.
+   - *False*, because Nash equilibria are formed when neither player possesses a strictly dominant strategy. Since the statement indicates that player /A/ DOES have a dominant strategy, a Nash equilibrim cannot form.
+2) _Claim_: In a Nash equilibrium of a two-player game each player is playing an optimal strategy, so the two player’s strategies are social-welfare maximizing.
+   - *False*, by the Prisoner's Dilemma. If both the players play optimal strategies, the net payoff is ~-2~. However, the Nash equilibrium will yield a payoff of ~(-4,-4)~, which yields a net payoff of ~-8~. Hence, players' strategies do NOT yield maximum social-welfare.
+3) Find all pure strategy Nash equilibria in the game below:
+   #+ATTR_LaTeX: :width 100
+   [[./6.3.png]]
+    Unique pure strategy Nash equilibria: ~(3,2), (2,4)~.
+    | P_A Strategy | P_B Strategy | Net PayOff |
+    |-------------+-------------+------------|
+    | ~U~    (1)  | ~R~     (2) | ~(3,2)~    |
+    | ~D~    (1)  | ~L~     (2) | ~(2,4)~    |
+    | ~D~    (2)  | ~L~     (1) | ~(3,2)~    |
+    | ~U~    (2)  | ~R~     (1) | ~(2,4)~    |
+
+4) Consider the two-player game with players, strategies and payoffs described in the following game matrix:
+   #+ATTR_LaTeX: :width 100
+   [[./6.4.png]]
+   a) Does either player have a dominant strategy? Explain briefly.
+      - Player /B/ has a dominant strategy, because strategy /L/ pays off for player /B/ regardless of the strategy chosen by player /A/.
+   b) Find all pure strategy Nash equilibria for this game.
+      - Unique Nash equilibria: ~(5,3), (6,2), (7,0), (5,3), (2,3), (0,3)~
+
+       | P_A Strategy | P_B Strategy | Net PayOff |
+       |-------------+-------------+------------|
+       | ~b~   (2)   | ~L~   (1)   | ~(5,3)~    |
+       | ~t~   (2)   | ~M~   (1)   | ~(6,2)~    |
+       | ~m~   (2)   | ~R~   (1)   | ~(7,0)~    |
+       | ~b~   (1)   | ~L~   (2)   | ~(5,3)~    |
+       | ~m~   (1)   | ~L~   (2)   | ~(2,3)~    |
+       | ~t~   (1)   | ~L~   (2)   | ~(0,3)~    |
+       
+5) Consider the following two-player game in which each player has three strategies. Find all the (pure strategy) Nash equilibria for this game.
+   #+ATTR_LaTeX: :width 100
+    [[./6.5.png]] 
+   
+       | P_A Strategy | P_B Strategy | Net PayOff |
+       |-------------+-------------+------------|
+       | ~U~   (1)   | ~R~   (2)   | ~(1,6)~    |
+       | ~M~   (1)   | ~M~   (2)   | ~(5,5)~    |
+       | ~D~   (1)   | ~L~   (2)   | ~(1,10)~   |
+       | ~M~   (2)   | ~L~   (1)   | ~(3,4)~    |
+       | ~M~   (2)   | ~M~   (1)   | ~(5,5)~    |
+       | ~M~   (2)   | ~R~   (1)   | ~(2,2)~    |
+
+* Chapter 8 Exercises
+2) There are two cities A and B joined by two routes. There are 80 travelers who begin in city A and must travel to city B. There are two routes between A and B. Route I begins with a highway leaving city A, this highway takes one hour of travel time regardless of how many travelers use it, and ends with a local street leading into city B. This local street near city B requires a travel time in minutes equal to 10 plus the number of travelers who use the street. Route II begins with a local street leaving city A, which requires a travel time in minutes equal to 10 plus the number of travelers who use this street, and ends with a highway into city B which requires one hour of travel time regardless of the number of travelers who use this highway.
