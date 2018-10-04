@@ -14,7 +14,7 @@
 3) Find all pure strategy Nash equilibria in the game below:
    #+ATTR_LaTeX: :width 100
    [[./6.3.png]]
-    Unique pure strategy Nash equilibria: ~(3,2), (2,4)~.
+    - Unique pure strategy Nash equilibria: ~(3,2), (2,4)~.
     | P_A Strategy | P_B Strategy | Net PayOff |
     |-------------+-------------+------------|
     | ~U~    (1)  | ~R~     (2) | ~(3,2)~    |
@@ -53,4 +53,49 @@
        | ~M~   (2)   | ~R~   (1)   | ~(2,2)~    |
 
 * Chapter 8 Exercises
-2) There are two cities A and B joined by two routes. There are 80 travelers who begin in city A and must travel to city B. There are two routes between A and B. Route I begins with a highway leaving city A, this highway takes one hour of travel time regardless of how many travelers use it, and ends with a local street leading into city B. This local street near city B requires a travel time in minutes equal to 10 plus the number of travelers who use the street. Route II begins with a local street leaving city A, which requires a travel time in minutes equal to 10 plus the number of travelers who use this street, and ends with a highway into city B which requires one hour of travel time regardless of the number of travelers who use this highway.
+2) [@2] There are two cities A and B joined by two routes. There are 80 travelers who begin in city A and must travel to city B. There are two routes between A and B. Route I begins with a highway leaving city A, this highway takes one hour of travel time regardless of how many travelers use it, and ends with a local street leading into city B. This local street near city B requires a travel time in minutes equal to 10 plus the number of travelers who use the street. Route II begins with a local street leaving city A, which requires a travel time in minutes equal to 10 plus the number of travelers who use this street, and ends with a highway into city B which requires one hour of travel time regardless of the number of travelers who use this highway.
+
+   a) Draw the network described above and label the edges with the travel time needed to move along the edge. Let x be the number of travelers who use Route I.
+    #+BEGIN_SRC dot :cmd dot :file 8_2.png :exports both
+    digraph g { rankdir="LR";
+        A -> D [ label = "80 -x + 10      " ];
+        A -> C [ label = "60" ];
+        C -> B [ label = "x + 10" ];
+        D -> B [ label = "60" ];
+    }
+    #+END_SRC
+
+    #+RESULTS:
+    #+ATTR_LaTeX: :width 200
+    [[file:8_2.png]]
+    
+   b) Travelers simultaneously chose which route to use. Find the Nash equilibrium value of ~x~.
+      - ~x = 40~, to minimize ~t~ from point ~A~ to point ~B~.
+   c) Now the government builds a new (two-way) road connecting the nodes where local streets and highways meet. This adds two new routes. One new route consists of the local street leaving city A (on Route II), the new road and the local street into city B (on Route I). The second new route consists of the highway leaving city A (on Route I), the new road and the highway leading into city B (on Route II). The new road is very short and takes no travel time. Find the new Nash equilibrium.
+
+    #+BEGIN_SRC dot :cmd dot :file 8_2c.png :exports both
+      digraph g { rankdir="LR";
+          A -> D [ label = "y + 10" ];
+          A -> C [ label = "60" ];
+          C -> D [ label = "0" ];
+          D -> C [ label = "0" ];
+          C -> B [ label = "x + 10" ];
+          D -> B [ label = "60" ];
+      }
+    #+END_SRC
+
+    #+RESULTS:
+    #+ATTR_LaTeX: :width 200
+    [[file:8_2c.png]]
+
+      - After the new two-way road is added, edge /AC/ becomes independent of edge /CB/. This is because the drivers can now choose the other route by traversing /CD/ or /DC/. Hence, the number of travelers between /AD/ and /CB/ is ~60~, yielding ~x = 50~.
+
+   d) What happens to total travel time as a result of the availability of the new road?
+      - ~t~ increases to ~120~ minutes per traveler, or ~120 * 80 = 9600~ minutes into the system overall.
+
+   e) If you can assign travelers to routes, then in fact it’s possible to reduce total travel time relative to what it was before the new road was built. That is, the total travel time of the population can be reduced (below that in the original Nash equilibrium from part (b)) by assigning travelers to routes. There are many assignments of routes that will accomplish this. Find one. Explain why your reassignment reduces total travel time.
+      - If we move one traveler out of the initial pool from Route I and Route II to the local routes, and leave the rest of the travelers on the highway routes, then the car that was moved can complete its route in ~22~ minutes, rather than the original ~120~ minutes. 
+
+* Chapter 9 Exercises
+1) In this question we will consider an auction in which there is one seller who wants to sell one unit of a good and a group of bidders who are each interested in purchasing the good. The seller will run a sealed-bid, second-price auction. Your firm will bid in the auction, but it does not know for sure how many other bidders will participate in the auction. There will be either two or three other bidders in addition to your firm. All bidders have independent, private values for the good. Your firm’s value for the good is c. What bid should your firm submit, and how does it depend on the number of other bidders who show up?
+   - My firm should submit all of the firm's value for the good, /c/, for the bid. If my firm submits a bid that exceeds /c/, then we risk overpaying because another bidder may bid some value between /c/ and our bid. If we underbid, my firm risks losing the item to another bidder. Thus, bidding exactly /c/ is the best strategy.
