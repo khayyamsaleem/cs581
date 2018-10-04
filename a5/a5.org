@@ -8,7 +8,7 @@
 
 * Chapter 6 Exercises
 1) _Claim_: If player /A/ in a two-person game has a dominant strategy s_A, then there is a pure strategy Nash equilibrium in which player /A/ plays s_A and player /B/ plays a best response to s_A.
-   - *False*, because Nash equilibria are formed when neither player possesses a strictly dominant strategy. Since the statement indicates that player /A/ DOES have a dominant strategy, a Nash equilibrim cannot form.
+   - *True*, because if s_A is dominant, then it is by default a best reponse to any of player /B/'s moves. Hence, player /A/ and player /B/ are both making best responses to each other, yielding a pure strategy Nash equilibrium.
 2) _Claim_: In a Nash equilibrium of a two-player game each player is playing an optimal strategy, so the two player’s strategies are social-welfare maximizing.
    - *False*, by the Prisoner's Dilemma. If both the players play optimal strategies, the net payoff is ~-2~. However, the Nash equilibrium will yield a payoff of ~(-4,-4)~, which yields a net payoff of ~-8~. Hence, players' strategies do NOT yield maximum social-welfare.
 3) Find all pure strategy Nash equilibria in the game below:
