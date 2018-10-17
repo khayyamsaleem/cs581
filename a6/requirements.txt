@@ -1,5 +1,6 @@
 backcall==0.1.0
 bleach==3.0.2
+cycler==0.10.0
 decorator==4.3.0
 defusedxml==0.5.0
 entrypoints==0.2.3
@@ -14,7 +15,9 @@ jupyter==1.0.0
 jupyter-client==5.2.3
 jupyter-console==6.0.0
 jupyter-core==4.4.0
+kiwisolver==1.0.1
 MarkupSafe==1.0
+matplotlib==3.0.0
 mistune==0.8.4
 nbconvert==5.4.0
 nbformat==4.4.0
@@ -31,6 +34,7 @@ prometheus-client==0.4.2
 prompt-toolkit==2.0.6
 ptyprocess==0.6.0
 Pygments==2.2.0
+pyparsing==2.2.2
 python-dateutil==2.7.3
 pytz==2018.5
 pyzmq==17.1.2
