@@ -1,0 +1,21 @@
+#+STARTUP: noindent showall
+#+TITLE: Power in Social Networks + John Nash
+#+SUBTITLE: CS581 Assignment #7
+#+AUTHOR: Khayyam Saleem
+#+OPTIONS: toc:nil num:nil
+#+DATE: October 23, 2018
+#+LATEX_HEADER: \usepackage[1.0]{geometry}
+
+* Chapter 12 Exercises
+1) Suppose a network exchange theory experiment is run on the graph depicted in Figure 12.10 using the one-exchange rule. Say which node or nodes you would expect to make the most money (i.e. receive the most favorable exchanges), and give a brief (1-3 sentence) explanation for your answer.
+   #+ATTR_LATEX: :width 200
+   [[./12.10.png]]
+   
+   - Node /b/ would make the most favorable exchanges in this network, as it has three nodes /depending/ on it, so it has the maximum /satiability/ of the 7 nodes present. Despite the one-exchange rule being in place, the nodes will favor making exchanges with Node /b/ because it has the most alternatives, and they will hence be forced to raise the stakes on their value offered to win her one exchange.
+     
+2) Suppose a network exchange theory experiment is run on the graph depicted in Figure 12.11 (i.e. a graph that is a 3-node path), using the one-exchange rule.\\
+   Now you, playing the role of a fourth node /d/, are told to attach by a single edge to one of the nodes in the network. How should you attach to the network to put yourself in as powerful a position as possible, where power will be determined by the result of a network exchange theory experiment run on the resulting 4-node network? Give a brief explanation of your answer. 
+   #+ATTR_LATEX: :width 200
+   [[./12.11.png]]
+   
+   - The position that maximizes my power the most is the one that will unseat the power in the network the most. Rather than attach myself to Node /b/, increasing her power and reducing that of Node /a/, Node /c/, and myself, I should attach myself to either Node /a/ or Node /c/. This action will have the effect of unseating Node /b/ and reducing her power in the network, while giving Nodes /c/ or /a/ an alternative to exchanging with /b/ and increasing their power, thus increasing my own.
