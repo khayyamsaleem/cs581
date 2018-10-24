@@ -8,17 +8,19 @@
 
 * Chapter 12 Exercises
 1) Suppose a network exchange theory experiment is run on the graph depicted in Figure 12.10 using the one-exchange rule. Say which node or nodes you would expect to make the most money (i.e. receive the most favorable exchanges), and give a brief (1-3 sentence) explanation for your answer.
-   #+ATTR_LATEX: :width 200
+   #+ATTR_LATEX: :width 100
    [[./12.10.png]]
    
    - Nodes /a/, /c/, and /d/ would make the most favorable exchanges in this network, as each of them are in a position to starve a neighboring node, whose only option is one of the three mentioned. Despite Node /b/ having the maximum /satiability/ of the 7 nodes present, the nodes on the periphery, Nodes /f/, /e/, and /g/, will not want to be left out of exchanges, so they will make better deals for Nodes /a/, /c/, and /d/, stripping Node /b/ of her benefit.
      
 2) Suppose a network exchange theory experiment is run on the graph depicted in Figure 12.11 (i.e. a graph that is a 3-node path), using the one-exchange rule.\\
    Now you, playing the role of a fourth node /d/, are told to attach by a single edge to one of the nodes in the network. How should you attach to the network to put yourself in as powerful a position as possible, where power will be determined by the result of a network exchange theory experiment run on the resulting 4-node network? Give a brief explanation of your answer. 
-   #+ATTR_LATEX: :width 200
+   #+ATTR_LATEX: :width 150
    [[./12.11.png]]
    
    - The position that maximizes my power the most is the one that will unseat the power in the network the most. Rather than attach myself to Node /b/, increasing her power and reducing that of Node /a/, Node /c/, and myself, I should attach myself to either Node /a/ or Node /c/. This action will have the effect of unseating Node /b/ and reducing her power in the network, while giving Nodes /c/ or /a/ an alternative to exchanging with /b/ and increasing their power, thus increasing my own.
 
 * John Nash
-In high school, during my class on Discrete Mathematics, we watched the dramatic biography of John Nash, /A Beautiful Mind/. It followed his career as a game theorist, but also depicted his troubled mind as a schizophrenic. A day after we watched the movie in class, John Nash passed away in a taxi crash.
+In high school, during my class on Discrete Mathematics, we watched the dramatic biography of John Nash, /A Beautiful Mind/. It followed his career as a game theorist, but also depicted his troubled mind as a schizophrenic. A day after we watched the movie in class, John Nash passed away in a taxi crash. This strange coincidence got me to research his life a bit more, and see if there was more to him than just the dramatic depiction from the film. I learned that beyond just game theory, he also dabbled in cryptography! In 1955, he wrote a series of secret letters to the NSA, in which he proposed a new type of encyption and decryption algorithm for secure message exchange. In these letters, declassified in 2012, he anticipated the advent of complexity theory as well as modern cryptography well before they came. The NSA disregarded the validity of the power of his machine, as he was unable to devise a proof for his conjecture. However, the basis of RSA encryption revolves around the same concepts as the machine that he described, depicted below. He even offered an explanation of the number of permutations required to break the scheme, and it far exceeded any standard that had been made up until that point. Though he was clearly a more well-known game theorist than cryptographer, this anecdote describes the far-reaching nature of his genius.
+#+ATTR_LATEX: :width 150
+[[./nash_enc_dec.png]]
