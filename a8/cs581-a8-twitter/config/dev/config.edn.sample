@@ -1,0 +1,6 @@
+{
+ :app-consumer-key         "insert-key-here"
+ :app-consumer-secret      "insert-secret-here"
+ :user-access-token        "insert-token-here"
+ :user-access-token-secret "insert-token-secret-here"
+}
