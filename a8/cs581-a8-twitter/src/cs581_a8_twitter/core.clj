@@ -25,18 +25,23 @@
   (if-not (empty? args)
     (with-open [client (ac/create-client)]
       (doseq [arg args]
-        (clojure.pprint/pprint
-         (map 
-          #(merge
-            {:query arg}
-            (first (sentiment-maps (:full_text %1)))
-            {:favorite_count (:favorite_count %1)}
-            {:screen_name (get-in %1 [:user :screen_name])})
-                                        ;list
-          (:statuses
-           (:body
-            (search
-             :client client
-             :oauth-creds my-creds
-             :params {:q arg :count 20 :result_type "popular" :tweet_mode "extended"})))))))
-    (throw (Exception. "Must have at least one argument!"))))
+        (let [out
+              (map 
+               #(merge
+                 {:query arg}
+                 (first (sentiment-maps (:full_text %1)))
+                 {:favorite_count (:favorite_count %1)}
+                 {:screen_name (get-in %1 [:user :screen_name])})
+               (:statuses
+                (:body
+                 (search
+                  :client client
+                  :oauth-creds my-creds
+                  :params {:q arg :count 20 :result_type "popular" :tweet_mode "extended"}))))]
+          [
+          (clojure.pprint/pprint out)
+          (println arg " -> AVG SENTIMENT: " (double (/ (reduce + (map :sentiment out)) (count out))))
+           ]
+      )
+    ))
+  (throw (Exception. "Must have at least one argument!"))))

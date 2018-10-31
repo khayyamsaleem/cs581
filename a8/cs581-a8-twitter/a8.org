@@ -1,0 +1,85 @@
+#+STARTUP: noindent showall
+#+TITLE: Twitter API
+#+SUBTITLE: CS581 Assignment #8
+#+AUTHOR: Khayyam Saleem
+#+OPTIONS: toc:nil num:nil
+#+LATEX_HEADER: \usepackage[1.0]{geometry}
+
+* Twitter API with Clojure -- Sentiment Analysis
+I used the Twitter API to analyze the sentiment of tweets by keyword. I did so in a rather unconventional language, but it is one of my favorites. Clojure is a really fast, functional programming language built on top of the JVM, so it is compatible with all Java code. I implemented my tool as a Clojure project, and all of the script logic is contained in ~core.clj~. The tool takes in an arbitrary amount of command line arguments, each of which represents a different keyword by which to search tweets. It then analyzes the sentiment conveyed by each keyword based on the 20 tweets with the most "favorites" on the platform, containing that keyword. It then gives that keyword  a score between 1 and 4 (1 being the most negative, and 4 being the most positive). It then computes the average sentiment of those top twenty tweets to yield an aggregate representation of the most popular sentiment associated with that keyword. Below is the output of that command with the keywords: ~"Trump" "happy" "Obama" "angry "pittsburgh"~
+** Output
+#+BEGIN_EXAMPLE
+({:query "Trump",
+  :sentiment 1,
+  :text
+  "The pathological liar at the White House podium just said Trump was elected by “an overwhelming majority of voters.”",
+  :favorite_count 60879,
+  :screen_name "Lawrence"}
+ {:query "Trump",
+  :sentiment 2,
+  :text "WOWZA.",
+  :favorite_count 61566,
+  :screen_name "eriqgardner"}
+ {:query "Trump",
+  :sentiment 2,
+  :text "TRUMP: \"I've decided to eat babies.\"",
+  :favorite_count 37797,
+  :screen_name "ChuckWendig"}
+ {:query "Trump",
+  :sentiment 1,
+  :text
+  "When Trump announces the country is being \"invaded\" when it is NOT, and sends troops to the border as though there's a military conflict when there is NOT, the media has every right to say Trump is emulating Hitler's use of the Reichstag Fire to stoke domestic panic pre-election.",
+  :favorite_count 27571,
+  :screen_name "SethAbramson"}
+ {:query "Trump",
+  :sentiment 1,
+  :text
+  "WARNING: The Hamiltonian Tyrant John Adams warned of emerges.",
+  :favorite_count 15597,
+  :screen_name "MalcolmNance"}
+ {:query "Trump",
+  :sentiment 1,
+  :text
+  "BREAKING: A civil RICO suit has been brought against The Trump Organization, Donald Trump, Donald Trump Jr., Eric Trump and Ivanka Trump in United States District Court for their participation in a pyramid scheme https://t.co/darYdHc7j9",
+  :favorite_count 31246,
+  :screen_name "JuddLegum"}
+ {:query "Trump",
+  :sentiment 1,
+  :text
+  "On the Chris Hayes Show, Steve Schmidt unloaded on the \"right-wing propaganda industry\" radicalizing evil losers, compared it to ISIS.",
+  :favorite_count 31918,
+  :screen_name "adamcbest"}
+ {:query "Trump",
+  :sentiment 2,
+  :text "\"I know they all look alike.\"",
+  :favorite_count 20605,
+  :screen_name "PrisonPlanet"}
+ {:query "Trump",
+  :sentiment 1,
+  :text
+  "The infantile crew at @cnn insists @realDonaldTrump ‘s rhetoric is an incitement to violence while pretending that THEIR hostile rhetoric—delivered 24/7—about Trump being a racist and fascist somehow does not have that same effect @Acosta",
+  :favorite_count 22700,
+  :screen_name "DineshDSouza"}
+ {:query "Trump",
+  :sentiment 3,
+  :text
+  "\"While Hillary Clinton viewed us as 'super predators,' while CNN views us as 'token negros who don't read,' Donald Trump views us as Americans.\"",
+  :favorite_count 21288,
+  :screen_name "BreitbartNews"}
+  .
+  .
+  .
+Trump  -> AVG SENTIMENT:  1.333333333333333
+.
+.
+.
+#+END_EXAMPLE
+** Aggregate
+The aggregate scores are shown here:
+#+BEGIN_EXAMPLE
+Trump  -> AVG SENTIMENT:  1.333333333333333
+happy  -> AVG SENTIMENT:  1.666666666666667
+Obama  -> AVG SENTIMENT:  1.4
+angry  -> AVG SENTIMENT:  1.533333333333333
+pittsburgh  -> AVG SENTIMENT:  1.214285714285714
+#+END_EXAMPLE
