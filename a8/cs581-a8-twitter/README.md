@@ -2,8 +2,6 @@
 
 ## Usage
 
-FIXME: explanation
-
     $ java -jar target/uberjar/cs581-a8-twitter-0.1.0-SNAPSHOT-standalone.jar [args]
 
 
