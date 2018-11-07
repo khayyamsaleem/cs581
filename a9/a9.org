@@ -1,0 +1,48 @@
+#+STARTUP: noindent showall
+#+TITLE: Marketing on Social Networks
+#+SUBTITLE: CS581 Assignment #9
+#+AUTHOR: Khayyam Saleem
+#+OPTIONS: toc:nil num:nil
+#+DATE: November 06, 2018
+#+LATEX_HEADER: \usepackage[1.0]{geometry}
+
+* Part I
+** 1) [[https://www.entrepreneur.com/article/302286][10 Secrets to Going Viral]]
+1) Master the target audience.
+   - To make content go viral, you must first understand who you are marketing the content to. The strategy for doing so is to create detailed personas, representing target customers, and using those personas to create shareable content. To create these personas in an effective way, you must speak with real and potential customers to help construct a profile.
+2) Select the appropriate social media platform.
+   - Depending on the nature of the content, a good marketer must select an appropriate platform. These are selected based on a combination of the personas created and type of content. Good social media platforms to market on include Instagram, Twitter, LinkedIn, Facebook, etc.
+3) Create content with high engagement.
+   - There exist algorithms that can push content that have a higher likelihood of yielding user engagement to the front of a feed. This forces content creators and viral marketers to create engaging content, because engaging content is rewarded and pushed to users whereas low-engagement content is buried.
+4) Time content for maximum reach.
+   - The time that content is released should be planned in such a way that it yields maximum visibility. Depending on the target audience, this can be at different hours of the day. The time that content is released can have a great impact on how social media platforms rank the content.
+5) Boost visibility with advertising.
+   - It helps to invest in paid advertising to boost the visibility of your content or campaign. This is not an issue for large companies as they are already well-known and have momentum to market their content with, but smaller companies have a lot to gain from investing in paid advertising, with the hopes of getting users in the target audience to spread the content further.
+6) Partner with a social media influencer.
+   - Social media influencers can provide brands with improved reach and help to fuel viral marketing campaigns. Social media influencers will make it their job to help your brand or content develop a following.
+7) Measure performance to create better campaigns in the future.
+   - Maintaining good analytics reports can help a campaign determine what is working and what isn't. Having good metrics can help guide improvement strategies for the marketing campaign.
+8) Provide a clear call to action.
+   - The content being pushed should demand some action from the target audience. Such calls to action may include signing up for a free trial or making some purchase at a discount. These calls to action will help your brand grow.
+9) Generate media attention.
+   - If your viral marketing campaign starts to yield some amount of traction, you can spread the word to media outlets. News organizations will publicize brands when they see that they are getting attention and have an active, positive user-base.
+10) Share novel content.
+   - Original content will perform better than tired, repeated content that fits some framework. To keep your brand interesting and in good favor, it is wise to make original, unusual content to generate higher engagement.
+
+** 2) [[https://www.entrepreneur.com/article/241223][Related Reading]] for (8) "Provide a clear call to action."
+- This article outlined three principles to employ to effectively create a call to action when marketing content; namely prioritizing _visibility_, producing a _clear and compelling message_, and _choosing supporting elements carefully_. It says that calls to action are among the most important elements on a landing page for a marketing campaign, but 70% of small business websites don't employ them at all. The article brings up the statistic that over half of visitors leave a webpage in less than 15 seconds. Strong calls to attention can help capture attention despite the brevity of this window, and help to generate higher conversion rates. Hence, to maximize the benefit, calls to action should satisfy a number of properties. They should be highly visible, toward the upper half of the page. They should be vibrant, perhaps shown in a different color than other elements on the page. The call to action must be strong, direct, and clear. Every call to action needs to concisely answer two questions: what do you want your visitor to do and why should they do it? Lastly, you should carefully select your supporting elements in your call to action, using high-quality, relevant images and strong contrast. These strategies may be verified with carefully conducted marketing experiments.
+
+* Part II
+** 3) [[https://www.forbes.com/video/4447449812001/#f503fc13ced1][How to Land a Job Using Social Media]]
+1) Create relevant profiles.
+   - One should be careful to curate a few high quality social media profiles when tying them into their job search. LinkedIn is a great platform to curate when job hunting. They should be consistent, and built out in such a way that they highlight one's job history. I feel that this is definitely an important part of curating your personal brand to attract companies, as it shows organization and care about one's image and online presence.
+2) Network and be engaged.
+   - When trying to land a job, one should actively reach out to companies and recruiters, showing enthusiasm and willingness to extend the first hand. One can show engagement by liking or commenting on the social media profiles and presences of their target company. I agree that this strategy of being forward on social media throughout the application process is effective, because it shows clear interest from the part of the applicant and companies will want to hire motivated employees.
+3) Be known as a resource.
+   - If an applicant is seen responding to people's questions on the subject matter for which they wish to be hired, it shows that they have a passion for that topic. Additionally, it can be a good opportunity to demonstrate their prowess in that field. Hence, being known through one's social media presence as a resource can bode well for that applicant during their job hunt. Once again, I agree with this strategy because it paints the applicant in a favorable light.
+4) Avoid professional exchanges on social sites.
+   - It is not recommended to directly ask for a job, publicly on social media. This can show an air of desperation or unprofessionalism. Instead, an applicant should strive to make direct connections with people and let their online presence convey their intent. In my opinion, this advice is appropriate because it implores the applicant to pay more attention to their social media presence, and let that presence convey their intent on their behalf.
+5) Make a plan.
+   - Having a plan to spread one's personal brand on social media can help make the job hunt a lot easier. Splitting social media self-marketing tasks over multiple days and weeks can allow an applicant to accomplish more, and curate a more nuanced, reviewed, and clear set of social media profiles. I agree with this strategy, in that it can prevent "burnout" during a highly taxing process.
+6) Revamp and rejuvenate your job search.
+   - Stay up to date on modern hiring platforms and talent acquisition services. By keeping in the know about hiring sites and ways to spread one's personal brand, applicants can stay ahead of the curve and always know the best way to let companies know more about themselves and their goals. I agree with this strategy because knowing a lot about hiring sites and resources can truly reduce a lot of the pain associated with the job hunt, and make it much easier to spread and maintain a personal brand.
