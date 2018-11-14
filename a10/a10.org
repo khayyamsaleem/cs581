@@ -1,0 +1,27 @@
+#+STARTUP: noindent showall
+#+TITLE: Behavior in Social Networks
+#+SUBTITLE: CS581 Assignment #10
+#+AUTHOR: Khayyam Saleem
+#+OPTIONS: toc:nil num:nil
+#+DATE: November 13, 2018
+#+LATEX_HEADER: \usepackage[1.0in]{geometry}
+#+LATEX_HEADER: \setlength{\parindent}{0pt}
+
+* Exercises
+** Chapter 16, Q5
+*(a)* Since the votes were made sequentially around the room, one can infer that an information cascade occurred. The first committee member voted on Candidate A, influencing the decision of the subsequent member, and then this vote cascaded around the room until everyone had unanimously voted on Candidate A, despite Candidate B being the better hire in the end.
+
+*(b)* Allowing the committee members to write down their vote for their candidate of choice in private, after the candidate was interviewed, and then publicizing all of them concurrently, would have prevented the information cascade. The committee members should then be allowed to discuss WHY they made the decision that they did, and then allowing the committee members to change their vote after hearing each others rationales.
+
+** Chapter 17, Q3
+I would try to undercut the price of the existing offering, initially taking a loss but winning lots of users over to my platform. If enough users converted to my product, then I would adjust my pricing model to monetize. My main goal would be to generate a large enough following to attract momentum from users from the other platform.
+
+Alternatively, I could try to beat the other platform to market on some new, revolutionary features and convert their users to my platform that way. If enough users saw value in the new services my platform offered, while still having a competitive price point, I could convert users without sacrificing revenue in the shorter term.
+
+** Chapter 18, Q1
+This new change will motivate users of the site to view the articles with a larger readership first, following the example of the users before them. However, this may also mean that articles with a lower readership will stay low, following the "rich get richer" model. It will make them follow a power-law distribution more closely, as there is a very strong relationship between information cascading and power-law distributions. Before the implementation of the counters, users would have no indication that other people on the platform had a preference for some content, and would then have to judge whether or not to open a content-item based solely of its title, and perhaps decide not to open it at all and navigate to a different site.
+
+* Real-Life Information Cascade
+In addition to my studies, I work part-time at a company called /Codecademy/, which creates content and courses to help people learn how to write code. At /Codecademy/, marketing is an important part of how we get visibility for our courses and convert our users from the free offering to the paid offering. One example of the power of information cascading was when we implemented a view of how many people were enrolled in our courses onto the landing page for some of them. The marketing team was immediately able to identify an increase in conversion, as our users were immediately able to see that their peers were also interested in a course and it motivated those that were at a tipping point to convert.
+
+Our engineering teams also votes on matters keeping the drawbacks of information cascading in mind, ensuring that all votes on whether or not some content belongs in the curriculum for a course are made without knowledge of another engineer's opinion on it. Then the votes and rationales are discussed at a meeting AFTER they've already been submitted by each curriculum engineer, and it allows the engineering team to voice their true, un-affected opinions on important matters when we are working on new course content or improving our existing offering. 
