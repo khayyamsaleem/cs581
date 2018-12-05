@@ -1,0 +1,26 @@
+#+STARTUP: noindent showall
+#+TITLE: Dynamics of Online Social Networks
+#+SUBTITLE: CS581 Assignment #12
+#+AUTHOR: Khayyam Saleem
+#+OPTIONS: toc:nil num:nil
+#+DATE: December 04, 2018
+#+LATEX_HEADER: \usepackage[1.0in]{geometry}
+#+LATEX_HEADER: \setlength{\parindent}{0pt}
+
+* Part 1
+** 19.8 Exercise 1
+(a) Nodes /c/ and /i/ adopt /A/ after step one. The cascade ends after node /k/ adopts.\\
+(b) The density of the cluster containing nodes /d/, /g/, /h/, and /j/ must be greater than ~1/2~ because the cascade ceased after node /k/ adopted, and those nodes listed were the ones that hadn't adopted.\\
+
+My process to get the nodes that adopted and tracing the cascade was to check each neighboring node for each of the nodes that had already adopted. Then I would check if the cascade had ended. Otherwise, I would tag the node as having adopted /A/.\\
+For (b), I was able to use the property declared in section 19.3, that described how the rest of the nodes that hadn't adopted after a cascade yielded a cluster such that the cluster's density would be greater than ~1 - q~.
+
+* Part 2
+** Summary
+The situation initially gained viral attention through Facebook. Alfie Evans' father posted about his son's medical condition on Facebook, and then those posts were shared by many people who saw the post and sympathized. After some time, a Facebook group was developed for activists on the issue, which grew to over 600,000 users at some point. In the group, Alfie's father would post updates on Alfie's situation, and other sympathetic members would offer their suggestions for care and their support. Another topic of discussion was the matter of Alfie's potential transfer to a hospital in Rome, where he could potentially get better treatment for his case. Other groups got involved in the discussion, such as Christian and right-leaning congregations. They tied his specific case to national issues of contention such as abortion and public healthcare. Through social media, groups were able to plan protests, and they conspired to work against the hospital that suggested the best possible decision was to cut off Alfie's life support. They also protested outside the hospital, raiding the building and cutting off important hospital operations. These radical supporters for Alfie's cause verbally attacked the doctors charged with Alfie's care. They compared his situation to other cases, and sensationalized his plight using social media.
+** Question 1
+The contribution of social media probably helped Alfie's family cope with the situation, as they were part of a community that offered lots of sympathy and condolences for their situation. They additionally helped raise money for his treatment.
+** Question 2
+There were also clear negative consequences to the sensationalization of Alfie's plight. The charging of the hostpital and the blocking of key hospital operations such as ambulance movement was a significant problem induced by the involvement of Alfie's online supporters. Additionally, the politician's public posting of the letter of support for Alfie to the Secretary of State seemed like a PR move more than anything. Since parties like Alex Jones or hard-right groups got involved, they used the situation to promote their radical agenda.
+** Question 3
+Though it would have been better had the issue not been so viral on Facebook's platform, I don't think Facebook would have been able to predict the situation's escalation. Since their algorithm promotes meaningful content, what was initially just support from friends and family became likes and reactions and reposts, allowing more and more of hte community to hop on the bandwagon.
